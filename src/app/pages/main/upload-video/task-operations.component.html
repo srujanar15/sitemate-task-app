@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="pageWrapper">
+<mat-card class="mat-mdc-card mdc-card cardWithShadow theme-card">
+  <mat-card-header class="mat-mdc-card-header b-b">
+    <div class="mat-mdc-card-header-text">
+      <mat-card-title class="mat-mdc-card-title m-b-0">Operations</mat-card-title>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row">
+    <div class="col-12 col-sm-6">
+      <button mat-raised-button color="primary" class="w-100 mb-3" (click)="createJsonObj()">Create</button>
+    </div>
+    <div class="col-12 col-sm-6">
+      <button mat-raised-button color="primary" class="w-100 mb-3" (click)="fetchJsonObj()">Read</button>
+    </div>
+    <div class="col-12 col-sm-6">
+      <button mat-raised-button color="primary" class="w-100 mb-3" (click)="updateJsonObj()">Update</button>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="col-6 col-sm-6 mb-3">
+        <span>Enter ID to delete</span>
+        <input matInput [(ngModel)]="delId" placeholder="Enter ID to delete" name="delId" type="number"/>
+      </div>
+      <div class="col-6 col-sm-6">
+        <button mat-raised-button color="primary" class="w-100" (click)="deleteJsonObj()">Delete</button>
+      </div>
+      
+    </div>
+  </div>
+  </mat-card-content>
+</mat-card>
+</div>
