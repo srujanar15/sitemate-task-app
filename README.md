@@ -1,15 +1,12 @@
-# vidlocale-Angular-pro
-vidlocale Angular App
+# Sitematetask-Angular-pro
+Sitematetask Angular App
 
 Took a angular material template
 
 ## Running Locally
 ```sh
 npm install -g @angular/cli
-cd vidlocaleapp
+cd sitemate-task-app
 npm install
 npm run start
 ```
-<!-- login credentials -->
-Username: admin
-Password: vAdmin@123
